@@ -11,6 +11,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        // 앱이 모바일이나 웹, 데스크톱, 맥 등 어떤 플랫폼에서도 자연스럽게 보이도록 지원
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
       home: HomePage(), // 홈페이지 보여주기
     );
   }
